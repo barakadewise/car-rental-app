@@ -1,9 +1,22 @@
 "use client";
 
-const CustomButton = () => {
+import { CustomButtonProps } from "@/types";
+
+
+
+const CustomButton = ({
+  title,
+  handleOnclick,
+  buttonStyle,
+}: CustomButtonProps) => {
   return (
-    <button disabled={false} type={"button"} className={`bg-slate-400 px-4 py-1 rounded-full` } onClick={() => {}}>
-      <span className={`flex-1`}>title</span>
+    <button
+      disabled={false}
+      type={"button"}
+      className={buttonStyle}
+      onClick={handleOnclick}
+    >
+      <span className={`flex-1  text-white text-[14px] p-2 `}>{title}</span>
     </button>
   );
 };
