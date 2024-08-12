@@ -12,13 +12,14 @@ const Hero = () => {
         <h1 className=" 2xl:text-[60px] sm:text-[50px] text-[40px] font-extrabold">
           Find, book,or rent a car ,-quickly and easily!
         </h1>
-        <p className="text-sm font-thin text-[18px] pb-2">
-          streamline your car rental experiance with our efficient booking
+        <p className="text-sm font-thin text-[15px] pb-2">
+            Streamline your car rental experiance with our efficient booking
           process!
         </p>
         <CustomButton
           title="Explore Cars"
-          buttonStyle="bg-blue-600 rounded-full py-1 px-2"
+          btnType="button"
+          buttonStyle="bg-blue-600 rounded-full py-1 px-2 text-white"
           handleOnclick={handleButton}
         />
       </div>
