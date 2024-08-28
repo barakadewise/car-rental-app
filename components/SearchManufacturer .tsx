@@ -32,7 +32,7 @@ const SearchManufacturer = ({
         );
 
   return (
-    <div className="h-full">
+    <div className="">
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
           <ComboboxButton className="absolute top-[10px]">
@@ -58,13 +58,13 @@ const SearchManufacturer = ({
             leaveTo="opacity-0"
             afterLeave={() => setQuery("")}
           >
-            <ComboboxOptions className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
+            <ComboboxOptions className="relative mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
               {filteredManufacturers.length === 0 && query !== "" ? (
                 <div className="relative cursor-default select-none px-4 py-2 text-gray-700">
                   Nothing found.
                 </div>
               ) : (
-                filteredManufacturers.map((item,index) => (
+                filteredManufacturers.map((item, index) => (
                   <ComboboxOption
                     key={index.toString()}
                     className={({ focus }) =>
@@ -72,7 +72,7 @@ const SearchManufacturer = ({
                         focus ? "bg-teal-600 text-white" : "text-gray-900"
                       }`
                     }
-                    value={query}
+                    value={item.manufacturer}
                   >
                     {({ selected, focus }) => (
                       <>
