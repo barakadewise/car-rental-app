@@ -13,7 +13,7 @@ const Hero = () => {
           Find, book,or rent a car ,-quickly and easily!
         </h1>
         <p className="text-sm font-thin text-[15px] pb-2">
-            Streamline your car rental experiance with our efficient booking
+          Streamline your car rental experiance with our efficient booking
           process!
         </p>
         <CustomButton
@@ -30,7 +30,7 @@ const Hero = () => {
             alt="hero_image"
             width={400}
             height={350}
-            className=" object-contain h-auto w-auto"
+            className="object-contain h-auto w-auto"
           />
         </div>
       </div>

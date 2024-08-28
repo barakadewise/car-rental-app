@@ -13,17 +13,16 @@ export default function Home() {
             Explore the car you might like!
           </p>
         </div>
-        </div>
+      </div>
 
-        <div className="flex-1 justify-between bg-red-500  sm:px-16 px-6 gap-5">
-          <SearchBar />
-          
-        <div className="flex gap-10">
+      <div className="flex  xl:flex-row md:flex-row flex-col w-full justify-between sm:px-16 px-6">
+        <SearchBar />
+
+        <div className="gap gap-2 flex flex-row">
           <CustomFilter />
           <CustomFilter />
         </div>
       </div>
-      
     </main>
   );
 }

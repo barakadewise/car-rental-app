@@ -2,8 +2,6 @@
 
 import { CustomButtonProps } from "@/types";
 
-
-
 const CustomButton = ({
   title,
   btnType,
