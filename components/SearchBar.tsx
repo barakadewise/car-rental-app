@@ -1,10 +1,9 @@
 'use client'
 
-import { Combobox } from "@headlessui/react";
 import Image from "next/image";
 import SearchManufacturer from "./SearchManufacturer ";
 import { useState } from "react";
-import { manufacturers } from "@/constants/constatnts";
+
 
 const SearchBar = () => {
 
