@@ -23,7 +23,7 @@ const Hero = () => {
           handleOnclick={handleButton}
         />
       </div>
-      <div className=" flex-1  xl:w-[500px] xl:h-[500px]  h-[400px] w-screen ">
+      <div className=" flex-1  xl:w-[500px] xl:h-[500px]  h-[400px] w-screen">
         <div className="h-full flex justify-center items-center">
           <Image
             src="/hero_image.png"

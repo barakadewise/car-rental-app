@@ -45,11 +45,12 @@ const SearchManufacturer = ({
         </ComboboxButton>
 
         <ComboboxInput
-          className="w-full py-2 pl-12  text-sm leading-5 text-gray-900  bg-slate-300 rounded-2xl border-none  focus:outline-none "
+          className="w-full py-2 pl-12  text-sm leading-5 text-gray-900  bg-slate-200 rounded-2xl border-none  focus:outline-none "
           placeholder="Benz"
           displayValue={(manufacturer: string) => manufacturer}
           onChange={(event) => setQuery(event.target.value)}
         />
+
         <Transition
           as={Fragment}
           leave="transition ease-in duration-100"
@@ -57,8 +58,7 @@ const SearchManufacturer = ({
           leaveTo="opacity-0"
           afterLeave={() => setQuery("")}
         >
-          <ComboboxOptions 
-          className="aabsolute mt-2 top-auto bottom-full transform translate-y-[-10px] max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm z-10">
+          <ComboboxOptions className="aabsolute mt-2 top-auto bottom-full transform translate-y-[-10px] max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm z-10">
             {filteredManufacturers.length === 0 && query !== "" ? (
               <div className="relative cursor-default select-none px-4 py-2 text-gray-700 z-10">
                 Nothing found.
@@ -69,7 +69,7 @@ const SearchManufacturer = ({
                   key={index.toString()}
                   className={({ focus }) =>
                     `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                      focus ? "bg-teal-600 text-white" : "text-gray-900"
+                      focus ? "bg-blue-600 text-white" : "text-gray-900"
                     }`
                   }
                   value={item.manufacturer}
@@ -86,7 +86,7 @@ const SearchManufacturer = ({
                       {selected ? (
                         <span
                           className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
-                            focus ? "text-white" : "text-teal-600"
+                            focus ? "text-white" : "text-blue-600"
                           }`}
                         >
                           <CheckIcon className="h-5 w-5" aria-hidden="true" />

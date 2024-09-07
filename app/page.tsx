@@ -8,7 +8,7 @@ export default function Home() {
       <Hero />
       <div className="mt-4  w-max py-4 px-16 " id="discover">
         <div className="pb-3">
-          <h3 className="font-extrabold text-4xl">Car Cartalogue</h3>
+          <h3 className="font-extrabold text-4xl">Car Catalogue</h3>
           <p className="text-sm  font-thin text-[15px]">
             Explore the car you might like!
           </p>
