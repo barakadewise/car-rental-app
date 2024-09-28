@@ -17,6 +17,7 @@ const SearchManufacturer = ({
   manufacturer,
   setManufacturer,
 }: SearchManufacturerProps) => {
+  
   //set selsected query value to the input field
   const [query, setQuery] = useState("");
 
